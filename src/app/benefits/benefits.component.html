@@ -1,0 +1,51 @@
+<section class="benefits-section section-padding" id="benefits">
+  <div class="container">
+    <div class="benefits-heading text-center">
+      <h3 class="primary-color font-medium">BENEFITS</h3>
+      <p class="dark-color font-normal">We make it easy and affordable for you to stay fit and healthy</p>
+    </div>
+    <div class="benefits-main mt-5">
+      <ngx-slick-carousel #slickModal="slick-carousel"  [config]="benefitsSlider">
+        <div ngxSlickItem class="slide-card slide">
+          <div class="main-card text-center">
+            <figure class="mx-auto">
+              <img src="../../assets/images/dumbell.png" class="img-fluid mx-auto" alt="">
+            </figure>
+            <div class="card-body p-0">
+              <h5 class="dark-color card-title font-medium mb-4">State Of Art Equipments</h5>
+              <p class="dark-color mb-4">Modern conveniences & functional spaces
+                to help you gain more from workout</p>
+              <button class="btn white-color btn-primary">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div ngxSlickItem class="slide-card slide">
+          <div class="main-card text-center">
+            <figure class="mx-auto">
+              <img src="../../assets/images/pay-per-use.png" class="img-fluid mx-auto" alt="">
+            </figure>
+            <div class="card-body p-0">
+              <h5 class="dark-color card-title font-medium mb-4">Pay per use</h5>
+              <p class="dark-color mb-4">Pay only for the number of hours
+                you workout in gym</p>
+              <button class="btn white-color btn-primary">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div ngxSlickItem class="slide-card slide">
+          <div class="main-card text-center">
+            <figure class="w-100 mx-auto">
+              <img src="../../assets/images/whistle.png" class="img-fluid mx-auto" alt="">
+            </figure>
+            <div class="card-body p-0">
+              <h5 class="dark-color card-title font-medium mb-4">certified experts</h5>
+              <p class="dark-color mb-4">Certified experts and trainers to help
+                you acheive your fitness goals</p>
+              <button class="btn white-color btn-primary">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</section>

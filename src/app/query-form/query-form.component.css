@@ -1,0 +1,18 @@
+.query-section { background-color: #fbfbfb; padding: 90px 0 60px;} 
+.query-heading p { line-height: 1.71; letter-spacing: 0.7px; font-family: 'Roboto-Regular'; } 
+.submit-btn { text-transform: uppercase; border-radius: 20px; font-size: 12px; font-weight: 500; letter-spacing: 0.6px; } 
+ ::placeholder { font-size: 14px; font-weight: 300; line-height: 1.71; letter-spacing: 0.7px; color: #a1a1a1; } 
+/* .query-form input, .query-form textarea {font-family: 'Roboto-Regular';} */
+.query-form .form-control { border: solid 1px #eeeeee; } 
+.query-form { width: 70%; margin: auto; } 
+.mobileMap {display: none;}
+
+@media (max-width: 768px) {
+  .query-section {padding: 40px 0;}
+  .query-heading p {font-size: 11px;}
+  .query-form {width: 100%;}
+  form div:first-of-type div:first-of-type {margin-bottom: 20px;}
+  .desktopMap {display: none;}
+  .mobileMap {display: block;}
+  .mobileMap img {height: 230px;}
+}

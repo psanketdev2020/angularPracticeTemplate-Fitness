@@ -1,0 +1,79 @@
+<section class="gallery-section section-padding" id="gallery">
+  <div class="container-fluid">
+    <div class="gallery-heading text-center mb-5">
+      <h3 class="primary-color font-medium">GALLERY</h3>
+    </div>
+    <div class="filter-galllery">
+      <div class="gallery-links-main">
+        <ul class="tab-links d-flex justify-content-center align-content-center">
+          <li class="mx-3" [ngClass]="{'active' : selectItem == 'item1'}" (click)="selectItem = 'item1'">
+            <a href="#!" (click)="showAll()">ALL</a>
+          </li>
+          <li class="mx-3" [ngClass]="{'active' : selectItem == 'item2'}" (click)="selectItem = 'item2'">
+            <a href="#!" (click)="showPhotos()">PHOTOS</a>
+          </li>
+          <li class="mx-3" [ngClass]="{'active' : selectItem == 'item3'}" (click)="selectItem = 'item3'">
+            <a href="#!" (click)="showVideo()">VIDEOS</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="gallery-images-main">
+          <div class="row">
+            <div class="col-md-6 tab-img" *ngIf="videItem">
+              <div class="gallery-img">
+                <img src="../../assets/images/video1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="ply-btn">
+                <img src="../../assets/images/play-btn.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-3 tab-img" *ngIf="photoItem1">
+              <div class="gallery-img">
+                <img src="../../assets/images/image-2.jpg" class="img-fluid" alt="">
+                <div class="gallery-content">
+                  <span>interior gallery</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 tab-img" *ngIf="photoItem2">
+              <div class="gallery-img">
+                <img src="../../assets/images/image-3.jpg" class="img-fluid" alt="">
+                <div class="gallery-content">
+                  <span>workouts</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 tab-img" *ngIf="photoItem3">
+              <div class="gallery-img">
+                <img src="../../assets/images/image-4.jpg" class="img-fluid" alt="">
+                <div class="gallery-content">
+                  <span>hammer-state of art equipments</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 tab-img" *ngIf="photoItem4">
+              <div class="gallery-img">
+                <img src="../../assets/images/image-5.jpg" class="img-fluid" alt="">
+                <div class="gallery-content">
+                  <span>interior gallery</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 tab-img" *ngIf="photoItem5">
+              <div class="gallery-img">
+                <img src="../../assets/images/image-6.jpg" class="img-fluid" alt="">
+                <div class="gallery-content">
+                  <span>workouts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
